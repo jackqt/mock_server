@@ -111,15 +111,15 @@
         if (mockAftScriptcheckbox.value == '1') {
             document.getElementById('chk_has_after_script').checked = true;
         }
-        var slVerb = document.getElementById('sl_mock_http_verb').getAttribute('value');
+        var slVerb = document.getElementById('sl_mock_http_verb').value;
         var slVerbOption = document.getElementById(slVerb);
         slVerbOption.setAttribute("selected", "selected");
 
-        var slEnv = document.getElementById('sl_mock_environment').getAttribute('value');
+        var slEnv = document.getElementById('sl_mock_environment').value;
         var slOption = document.getElementById(slEnv);
         slOption.setAttribute("selected", "selected");
 
-        var slContentType = document.getElementById('id_mock_content_type').getAttribute('value');
+        var slContentType = document.getElementById('id_mock_content_type').value;
         var slcType = ''
         switch(slContentType) {
             case 'application/json;charset=UTF-8':
