@@ -1,4 +1,4 @@
-class CreateMockdata < ActiveRecord::Migration
+class CreateMockdata < ActiveRecord::Migration[7.1]
 
   def self.up
 

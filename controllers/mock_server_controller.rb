@@ -76,9 +76,9 @@ class MockServerController < ApplicationController
   # Display the mock create page for a user to create a new mock data for a URL.
   #
   ['/create', '/home'].each do |path|
-    get path do
+    get path, :provides => 'html' do
       @title = "Create mock response"
-      haml :create_mock_request, locals: {mock_data: nil}
+      haml :create_mock_request, :format => :html5, locals: {mock_data: nil}
     end
   end
 

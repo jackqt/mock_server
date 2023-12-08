@@ -14,7 +14,7 @@ class MockServerController < ApplicationController
                                :mock_state, :mock_environment,
                                :mock_content_type,
                                :mock_served_times).where(id: params[:id])
-    if (params[:id].to_i.is_a? Fixnum) && (mockData.any?)
+    if (params[:id].to_i.is_a? Integer) && (mockData.any?)
       content_type 'application/json'
       status 200
       return mockData.first.to_json

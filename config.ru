@@ -3,6 +3,7 @@ require 'sinatra/base'
 require "sinatra/cookies"
 require 'active_record'
 require 'sqlite3'
+require 'haml'
 require 'tilt/haml'
 require 'uri'
 require 'httparty'
