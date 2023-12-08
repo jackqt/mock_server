@@ -1,6 +1,6 @@
 .idea
 public/upload/*
-db/mockserver.*
+db/mockserver.*.db
 logs/*
 .DS_Store
 .irb-history
