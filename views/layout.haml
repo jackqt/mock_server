@@ -3,14 +3,14 @@
     %head
         %title= @title + '-' + ENV['TEST_ENV']
         %meta{name: "viewport" ,content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}
-        %link{ :href => "/bootstrap/css/bootstrap.min.css", :type => "text/css", :rel => "stylesheet" }
+        %link{ :href => "https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css", :type => "text/css", :rel => "stylesheet" }
         %link{ :href => "/css/common.css", :type => "text/css", :rel => "stylesheet" }
         %script{src: '/js/common.js'}
-        %script{src: 'https://code.jquery.com/jquery-2.2.1.min.js'}
-        %script{src: '/bootstrap/js/bootstrap.js'}
-        %script{src: 'https://code.jquery.com/ui/1.11.4/jquery-ui.min.js'}
-        %script{src: '/js/jquery.caret.js'}
-        %script{src: '/js/jquery.validatejson.js'}
+        %script{src: 'https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js'}
+        %script{src: 'https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js'}
+        %script{src: 'https://cdn.bootcdn.net/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'}
+        %script{src: 'https://cdn.bootcdn.net/ajax/libs/Caret.js/0.3.1/jquery.caret.min.js'}
+        %script{src: '/js/vendors/jquery.validatejson.js'}
 
     %body{onload: ' urlChanged()'}
         %div{class: 'container-fluid'}
